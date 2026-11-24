@@ -1,0 +1,69 @@
+{
+  "adapter": "codsworth-expanded-step300",
+  "base_model": "openbmb/VoxCPM2",
+  "base_model_revision": "32279effe8c19989596f05d353d1447f51d9e915",
+  "upstream_source": "https://github.com/OpenBMB/VoxCPM",
+  "upstream_source_revision": "f772e498a45fbb5fb8e13fbf9b9c48be9fe33e69",
+  "base_model_license": "Apache-2.0",
+  "base_model_license_source": "https://huggingface.co/openbmb/VoxCPM2/blob/32279effe8c19989596f05d353d1447f51d9e915/README.md",
+  "adapter_license": null,
+  "adapter_license_status": "No separate adapter license has been declared; the base license is not represented as a grant for the training data.",
+  "training_performed": true,
+  "training_status": "complete",
+  "optimizer_steps_completed": 300,
+  "training_clips": 431,
+  "training_duration_seconds": 2495.1554166666665,
+  "development_clips": 6,
+  "audio_vae_trained": false,
+  "torch_version": "2.7.1+cu128",
+  "dataset_metadata": "../../datasets/codsworth-expanded-v1/summary.json",
+  "dataset_publication_status": "pending",
+  "weights_file": "lora_weights.safetensors",
+  "weights_size_bytes": 72397184,
+  "weights_sha256": "0e450ea1f59ee8f566d34e89ebda8710ecd63f0c7e40288bdb0ced9b96b7e63f",
+  "tensor_count": 384,
+  "trainable_parameter_count": 18087936,
+  "lora_config": {
+    "enable_lm": true,
+    "enable_dit": true,
+    "enable_proj": false,
+    "r": 32,
+    "alpha": 32,
+    "dropout": 0.0,
+    "target_modules_lm": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj"
+    ],
+    "target_modules_dit": [
+      "q_proj",
+      "v_proj",
+      "k_proj",
+      "o_proj"
+    ],
+    "target_proj_modules": [
+      "enc_to_lm_proj",
+      "lm_to_dit_proj",
+      "res_to_dit_proj",
+      "fusion_concat_proj"
+    ]
+  },
+  "original_training_config_sha256": "3bfdca49bdf21ce5a8afd2525be5103262c8210fa0b922bcf147c245f147c6f2",
+  "original_training_manifest_sha256": {
+    "train_manifest": "feb3e9bd9398af0cf222baa65c17f638abbae6e1d31241b94b640cafbe541993",
+    "val_manifest": "d0777e6742d9e9bc7afa4b497782600fbd2e8c8055f7f3138b728bfff6797760"
+  },
+  "portable_recipe_sha256": "a0d107acd1107f875dc05830492177d88818b43680c59a6c012851e20e801bdb",
+  "portable_config_sha256": "ddb8d60fe8461e6fe279ab53cdc4472454b198879cacfac6afc5d93435836628",
+  "changes_for_publication": [
+    "Replaced machine-local base path with public model ID and pinned revision.",
+    "Omitted hardware UUID and machine paths from public provenance.",
+    "Weights are byte-identical to the archived trained adapter."
+  ],
+  "limitations": [
+    "Successful optimization does not prove improved speaker fidelity.",
+    "This is an inference adapter, not the base model, AudioVAE, optimizer, or scheduler state.",
+    "The pilot and expanded runs have different development splits; their losses cannot directly rank them."
+  ]
+}

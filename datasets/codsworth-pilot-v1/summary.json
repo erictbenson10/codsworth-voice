@@ -1,0 +1,34 @@
+{
+  "dataset_id": "codsworth-pilot-v1",
+  "release_status": "metadata_only",
+  "audio_included": false,
+  "transcripts_included": false,
+  "assignment_source": "Original trainer train/development manifests; no resplitting performed.",
+  "historical_audio_verified": true,
+  "verification_date": "2026-09-07",
+  "train": {
+    "clips": 61,
+    "seconds": 450.00379166666664,
+    "groups": 44
+  },
+  "development": {
+    "clips": 6,
+    "seconds": 31.114833333333333,
+    "groups": 3
+  },
+  "limitations": [
+    "Small initial adaptation pilot; overfitting risk requires early checkpoint audition.",
+    "Identity inferred from explicit self-identification and Codsworth household narrative, with individually reviewed same-record continuation text; no per-clip listening certification.",
+    "Historical models may have seen older held-out clips; this run starts from public VoxCPM2 base.",
+    "No emotional labels invented; original wording and prosody retained."
+  ],
+  "upstream_attribution": "AquaV/fallout-4-voices; Fallout 4 game dialogue",
+  "source_manifest_sha256": {
+    "train": "155745250da0c1ad76d42619d646eb08fce7a31c0115ea28f258d3efba782b30",
+    "development": "d8c23c6bf73b52c0ec16a1d5e9aeeec6c17404992abc88d55df88d18c83d0802"
+  },
+  "metadata_sha256": {
+    "train": "3dfd941a96c39b4b0b2dacc6839ba2c15c0763af3dbbbc12d312e44dfdbcc626",
+    "development": "2f494640f8df0b8b5449811ff27433db66ed4b8dd04570d70b28fb002d204e8b"
+  }
+}

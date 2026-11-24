@@ -1,0 +1,11 @@
+{
+  "status": "publication_pending",
+  "planned_host": "Hugging Face",
+  "repository_id": null,
+  "repository_url": null,
+  "download_url": null,
+  "message": "The voice training dataset has not been published. Its Hugging Face pointer will be added after that separate release.",
+  "included_in_git": "Split identifiers, durations, hashes, and portable relative paths only. No audio or dialogue transcripts.",
+  "upstream_attribution": "AquaV/fallout-4-voices; Fallout 4 and Far Harbor game dialogue",
+  "dataset_license": "Not established by this project. Game assets retain their original ownership."
+}

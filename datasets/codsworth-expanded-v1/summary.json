@@ -1,0 +1,34 @@
+{
+  "dataset_id": "codsworth-expanded-v1",
+  "release_status": "metadata_only",
+  "audio_included": false,
+  "transcripts_included": false,
+  "assignment_source": "Original trainer train/development manifests; no resplitting performed.",
+  "historical_audio_verified": true,
+  "verification_date": "2026-09-07",
+  "train": {
+    "clips": 431,
+    "seconds": 2495.1554166666665,
+    "groups": 366
+  },
+  "development": {
+    "clips": 6,
+    "seconds": 23.080750000000002,
+    "groups": 3
+  },
+  "limitations": [
+    "Small initial adaptation pilot; overfitting risk requires early checkpoint audition.",
+    "Archived direct paired embedding similarity plus reviewed companion context supports identity; no new per-clip listening certification. Similarity is evidence, not ground-truth speaker identity.",
+    "Historical models may have seen older held-out clips; this run starts from public VoxCPM2 base.",
+    "No emotional labels invented; original wording and prosody retained."
+  ],
+  "upstream_attribution": "AquaV/fallout-4-voices; Fallout 4 game dialogue",
+  "source_manifest_sha256": {
+    "train": "feb3e9bd9398af0cf222baa65c17f638abbae6e1d31241b94b640cafbe541993",
+    "development": "d0777e6742d9e9bc7afa4b497782600fbd2e8c8055f7f3138b728bfff6797760"
+  },
+  "metadata_sha256": {
+    "train": "5c059905d31313bbb56ce1338f3f11b5358166ff2f40abcbd6549ac3f54333c0",
+    "development": "4b429c6e28f21c3e689ae68ae4f1448dcfccc376f8b91e81589bf8e7940bf40d"
+  }
+}
